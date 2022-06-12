@@ -1,0 +1,31 @@
+.article {
+  margin: 0 auto;
+  padding: 10rem;
+  width: 70%;
+  padding: 0;
+  border: 0;
+  background: #fff;
+}
+
+.article span {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.article b {
+  text-align: left;
+}
+
+.article li {
+  text-align: left;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.list li {
+  padding: 0.5rem;
+}

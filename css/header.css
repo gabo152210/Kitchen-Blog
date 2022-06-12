@@ -17,6 +17,12 @@ html {
   color: red;
 }
 
+.title p {
+  font-size: 1rem;
+  font-weight: italic;
+  margin: 1rem;
+}
+
 .nav__wrapper {
   font-size: 1rem;
   font-weight: 500;
@@ -31,38 +37,42 @@ html {
 .site-header {
   position: fixed;
   top: 0;
-  background-color: rgba(217, 217, 217, 0.5);
+  background-color: #edf2f4;
   width: 100%;
   margin-top: 0px;
+}
+
+.title {
+  margin-bottom: 2rem;
 }
 
 .site-header__wrapper {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   .site-header__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   .nav__wrapper {
     display: flex;
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1000px) {
   .nav__wrapper {
     position: absolute;
     top: 100%;
     right: 0;
     left: 0;
     z-index: -1;
-    background-color: #d9f0f7;
+    background-color: rgb(232, 232, 232);
     visibility: hidden;
     opacity: 0;
     transform: translateY(-100%);
@@ -83,11 +93,27 @@ html {
 .nav__toggle {
   display: none;
 }
-@media (max-width: 599px) {
+@media (max-width: 1000px) {
   .nav__toggle {
+    color: #000;
     display: block;
     position: absolute;
     right: 1rem;
     top: 1rem;
+    border-radius: 1rem;
+  }
+  .nav__toggle:hover {
+    color: #4c857b;
+    transition: all 0.3s ease-out;
+  }
+  .nav__toggle-bar {
+    display: block;
+    width: 1.8rem;
+    height: 0.4rem;
+    margin: 0.2rem;
+    background-color: #000;
+    border-radius: 2rem;
+    margin-left: 0.5rem;
+    transition: all 0.3s ease-out;
   }
 }

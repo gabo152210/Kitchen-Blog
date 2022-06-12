@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Fav Kitchen Blog</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="./css/contact.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+  <!-- Header Start -->
+  <header class="site-header">
+    <div class="wrapper site-header__wrapper">
+      <a href="#" class="brand">
+        <b>|</b>Fav Kichen Blog<b>|</b>
+      </a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" type="button">
+          <span class="nav__toggle-bar nav__toggle-bar1"></span>
+          <span class="nav__toggle-bar nav__toggle-bar2"></span>
+          <span class="nav__toggle-bar nav__toggle-bar3"></span>
+        </button>
+        <ul class="nav__wrapper">
+          <li class="nav__item"><a href="index.html">Home</a></li>
+          <li class="nav__item"><a href="about.html">About</a></li>
+          <li class="nav__item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <main class="main" class="main_about">
+    <h2 class="main_title">
+      Contact Us
+    </h2>
+    <section class="form-register">
+      <input class="controls" type="text" name="nombres" id="nombres" placeholder="Your name">
+      <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Your lastname">
+      <input class="controls" type="email" name="correo" id="correo" placeholder="Your email">
+      <input class="controls" type="text" name="message" id="message" placeholder="Type your message">
+      <p>I agree with the <a href="#">
+          <span>Terms & Conditions</span>
+        </a></p>
+      <input class="botons" type="submit" value="Send Message">
+    </section>
+
+  </main>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/header-1.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments);
+    };
+    ga.q = [];
+    ga.l = +new Date();
+    ga("create", "UA-XXXXX-Y", "auto");
+    ga("set", "anonymizeIp", true);
+    ga("set", "transport", "beacon");
+    ga("send", "pageview");
+
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
