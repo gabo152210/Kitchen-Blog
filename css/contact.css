@@ -9,8 +9,14 @@ span {
   font-style: italic;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .form-register {
-  width: 400px;
+  width: 15rem;
   background: #24303c;
   padding: 30px;
   margin: auto;
@@ -19,6 +25,12 @@ span {
   font-family: "calibri";
   color: white;
   box-shadow: 6px 12px 36px #000;
+}
+
+@media (min-width: 768px) {
+  .form-register {
+    width: 20rem;
+  }
 }
 
 .form-register h4 {
@@ -67,4 +79,10 @@ span {
   margin: 16px 0;
   font-size: 16px;
   border-radius: 1rem;
+  margin-top: 3rem;
+}
+
+.botons:active {
+  background-color: #426ac0;
+  transition: all 0.3s ease-out;
 }
